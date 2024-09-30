@@ -1,0 +1,62 @@
+:host {
+  display: block;
+}
+
+body{
+  display: flex;
+}
+
+#bar{
+  padding: .01%;
+  display: flex;
+  max-height: 100px;
+  margin: auto 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 50px -25px darkblue;
+
+}
+
+.usuario{
+  margin: 1%;
+}
+
+.menu{
+  display: flex;
+  margin: auto 5%;
+}
+.menu svg{
+  margin: 5% 10%;
+  color: gray;
+}
+.menu svg:hover{
+  color: darkblue;
+}
+
+.logos img{
+  width: 10%;
+  align-content: center;
+  float: left;
+}
+i{
+  margin-top: 20px;
+  height: 10vh;
+  border: 2px solid darkblue;
+}
+
+.logos{
+  display: flex;
+}
+
+.gradiant_H{
+  border-image: linear-gradient(90deg,rgb(0, 7, 46),blue)1;
+}
+
+
+
+
+
+
+#borrar{
+  color: white;
+}
+

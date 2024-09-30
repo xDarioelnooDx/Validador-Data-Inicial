@@ -1,0 +1,48 @@
+.bar{
+  display: grid;
+  grid-template-columns: repeat(2,2fr);
+  border-radius: 10px;
+  padding: 10px;
+  height: 80vh;
+  margin-right: 50px;
+  max-width: 250px;
+  float: left;
+  box-shadow: 10px 10px 30px -20px darkblue;
+  color: black;
+}
+
+.barra{
+  /* border: 3px solid red; */
+  max-width: 150px;
+  display: none;
+  height: 80vh;
+}
+
+.barra h2{
+  color: gray;
+  font-weight: bold;
+  height: 12vh;
+}
+
+.icon{
+  /* border: 3px solid yellow; */
+  display: grid;
+  width: 50px;
+  height: 80vh;
+}
+
+.icon svg:hover{
+  color: darkblue;
+}
+
+.icon svg{
+  width: 40px;
+  height: 40px;
+  color: gray;
+}
+
+a{
+  text-decoration: none;
+  color:gray;
+}
+

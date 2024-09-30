@@ -1,0 +1,32 @@
+.comprobador{
+  border: 3px solid lightgray;
+  margin: 10px 100px;
+}
+
+.com{
+  margin: 50px 50px;
+  height: 50ch;
+  border: 3px solid lightgray;
+  align-content: center;
+  border-style: dotted;
+}
+svg{
+  height: 30%;
+  width: 30%;
+}
+.btn{
+  height: 50px;
+  width: 100px;
+  margin: auto 10px;
+}
+
+.error{
+  border: 3px solid lightgray;
+  margin: auto 200px;
+}
+.error li {
+  margin: 10px;
+  list-style: none;
+  border-bottom: 3px solid lightgray;
+  width: 98%;
+}
