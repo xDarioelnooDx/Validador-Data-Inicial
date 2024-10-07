@@ -9,15 +9,15 @@ body{
 #bar{
   padding: .01%;
   display: flex;
-  max-height: 100px;
+  max-height: 80px;
+  width: 100%;
   margin: auto 20px;
   border-radius: 10px;
-  box-shadow: 1px 1px 50px -25px darkblue;
+  box-shadow: 1px 1px 50px -25px darkred;
+  justify-content: right;
+  align-content: center;
+  overflow: hidden;
 
-}
-
-.usuario{
-  margin: 1%;
 }
 
 .menu{
@@ -29,34 +29,9 @@ body{
   color: gray;
 }
 .menu svg:hover{
-  color: darkblue;
+  color: darkred;
 }
 
-.logos img{
-  width: 10%;
-  align-content: center;
-  float: left;
+.user{
+  margin-right: 20px;
 }
-i{
-  margin-top: 20px;
-  height: 10vh;
-  border: 2px solid darkblue;
-}
-
-.logos{
-  display: flex;
-}
-
-.gradiant_H{
-  border-image: linear-gradient(90deg,rgb(0, 7, 46),blue)1;
-}
-
-
-
-
-
-
-#borrar{
-  color: white;
-}
-

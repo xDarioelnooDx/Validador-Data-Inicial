@@ -1,6 +1,11 @@
+*{
+  text-align: center;
+}
+
 .comprobador{
   border: 3px solid lightgray;
-  margin: 10px 100px;
+  margin: 10px 150px;
+  align-content: center;
 }
 
 .com{
@@ -14,6 +19,7 @@ svg{
   height: 30%;
   width: 30%;
 }
+
 .btn{
   height: 50px;
   width: 100px;
@@ -26,7 +32,9 @@ svg{
 }
 .error li {
   margin: 10px;
+  color: red;
   list-style: none;
+  text-align: center;
   border-bottom: 3px solid lightgray;
   width: 98%;
 }

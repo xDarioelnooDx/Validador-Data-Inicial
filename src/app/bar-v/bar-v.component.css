@@ -1,48 +1,64 @@
-.bar{
-  display: grid;
-  grid-template-columns: repeat(2,2fr);
+.barr{
   border-radius: 10px;
   padding: 10px;
-  height: 80vh;
-  margin-right: 50px;
-  max-width: 250px;
+  height: 100%;
+  max-width: 200px;
   float: left;
-  box-shadow: 10px 10px 30px -20px darkblue;
-  color: black;
+  box-shadow: 10px 10px 30px -20px darkred;
+}
+
+.bar{
+  display: grid;
+  grid-template-columns: repeat(2,.1fr);
+  border-radius: 10px;
+  height: 80vh;
+  max-width: 200px;
+  justify-content: center;
 }
 
 .barra{
   /* border: 3px solid red; */
+  margin: 10px 10px;
   max-width: 150px;
-  display: none;
-  height: 80vh;
-}
-
-.barra h2{
-  color: gray;
-  font-weight: bold;
-  height: 12vh;
+  height: 10vh;
 }
 
 .icon{
   /* border: 3px solid yellow; */
-  display: grid;
+  /* margin-left: 10px; */
   width: 50px;
-  height: 80vh;
+  height: 10vh;
+  float: left;
 }
 
-.icon svg:hover{
-  color: darkblue;
+.btn{
+  margin-top: 5px;
 }
 
 .icon svg{
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   color: gray;
 }
 
-a{
-  text-decoration: none;
-  color:gray;
+.icon svg:hover{
+  color: darkred;
+}
+
+.logos{
+  /* display: flex; */
+  /* border: 3px solid green; */
+  max-height: 100px;
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.logos img{
+  width: 100%;
+}
+i{
+  margin-top: 20px;
+  height: 7vh;
+  border: 2px solid darkblue;
 }
 

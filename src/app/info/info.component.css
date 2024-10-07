@@ -1,12 +1,14 @@
 *{
   padding: 0px;
   margin: 0px;
+  align-items: center;
+  justify-items: center;
 }
 
 section{
   display: flex;
-  margin: 3% auto;
-
+  margin: 15% auto;
+  /* border: 3px solid red; */
 }
 
 .sub_block a{
@@ -14,6 +16,7 @@ section{
   padding: 10px;
   color: black;
 }
+
 .tam{
   border: 3px solid red;
   width: 15% ;
@@ -21,7 +24,7 @@ section{
 }
 
 .all_block :hover,.all_block a:hover{
-  background-color: darkblue;
+  background-color: darkred;
   color: white;
   border-radius: 5px;
 }
@@ -60,3 +63,13 @@ label{
   font-weight: bold;
   font-size: 24px;
 }
+
+/* .active-button {
+  background-color: green;
+  color: white;
+}
+
+.inactive-button {
+  background-color: red;
+  color: white;
+} */

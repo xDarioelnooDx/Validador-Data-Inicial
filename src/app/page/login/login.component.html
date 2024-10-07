@@ -1,0 +1,31 @@
+<body>
+<div class="content row">
+  <div class="imagen1" *ngIf="!isYoco() && !isDali()">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbqLCp-ncUIzb5CJJAimVP47nH__ICc8J-0g&s" alt="logo">
+  </div>
+  <div class="imagen" *ngIf="isYoco()">
+    <img src="https://media.licdn.com/dms/image/v2/C4E0BAQF4Ea7s3EXiVA/company-logo_200_200/company-logo_200_200/0/1630597632419/yokomotor_logo?e=1735776000&v=beta&t=YnN-B8t8XONwmrxY9ZEOEVBJAVXV-lW14jtgZr7YWu8" alt="logo">
+  </div>
+  <div class="imagen2" *ngIf="isDali()">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8aolXD_FigbObiRt8bKdLOd4VOlThWkXmqg&s" alt="logo">
+  </div>
+  <h5>VALIDADOR</h5>
+
+  <label for="">Usuario</label>
+  <input type="text" placeholder="ingresa tu usuario*" [(ngModel)]="user">
+
+  <label for="">Contraseña</label>
+  <input type="password" placeholder="ingresa tu Contraseña" name="contraseña" [(ngModel)]="contrasena">
+
+  <p *ngIf="entrar" style="color: red; float: left;" >Usuario o Contraseña son invalidas.</p>
+
+  <button class="btn btn-danger" (click)="navegar()" [ngStyle]="{'background-color': isYoco() ? 'red' : (isDali() ? 'darkgreen' : 'blue')}" >Iniciar Sesion</button>
+  <a href="">¿olvidaste tu contraseña?</a>
+
+</div>
+
+  <div class="cubito" *ngIf="(user == 'dms')" ></div>
+
+</body>
+
+

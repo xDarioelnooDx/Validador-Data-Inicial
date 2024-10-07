@@ -6,23 +6,33 @@ import { AppComponent } from './app.component';
 import { BarComponent } from "./bar/bar.component";
 import { InfoComponent } from "./info/info.component";
 import { TablasExcelComponent } from './page/tablas-excel/tablas-excel.component';
-import { provideRouter, Router, RouterLink, Routes } from '@angular/router';
-import { comprobarComponent } from './page/comprobar/bodegas.component';
+import { provideRouter, Router, RouterLink, Routes, withViewTransitions } from '@angular/router';
+import { comprobarComponent } from './page/comprobar/comprobar.component';
 import { BarVComponent } from './bar-v/bar-v.component';
+import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './page/login/login.component';
+import { InfoDaliComponent } from './info-dali/info-dali.component';
+import { InfoYokoComponent } from './info-yoko/info-yoko.component';
+import { TablasFarmaciaComponent } from './page/tablas-farmacia/tablas-farmacia.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TablasExcelComponent,
     comprobarComponent,
-    BarVComponent,
+    InfoDaliComponent,
+    InfoYokoComponent,
+    TablasFarmaciaComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BarComponent,
+    BarVComponent,
     InfoComponent,
-    RouterLink
+    LoginComponent,
+    RouterLink,
+    FormsModule
 ],
   providers: [],
   bootstrap: [AppComponent]

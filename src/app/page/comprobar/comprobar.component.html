@@ -1,3 +1,6 @@
+<app-bar-v></app-bar-v>
+<app-bar></app-bar>
+
 <div class="comprobador">
   <div class="com">
 
@@ -9,20 +12,26 @@
 
   </div>
 </div>
-<div class="boton">
-  <button class="btn btn-outline-success">OK</button>
+
+<div class="boton" (input)="onInputChange($event)">
+  <input
+  type="file"
+  id="docpicker"
+  accept=".txt,.xlsx,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+
+  <!-- <button class="btn btn-outline-success" (click)="visible()" *ngIf="tieneDato">Validar</button> -->
 </div>
-<div class="error">
+<div class="error" *ngIf="visibles">
   <ul>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
+    <li>line 12/3</li>
+    <li>line 12/11</li>
+    <li>line 12/8</li>
+    <li>line 12/90</li>
+    <li>line 12/2</li>
+    <li>line 12/56</li>
+    <li>line 11/3</li>
+    <li>line 13/3</li>
+    <li>line 22/12</li>
+    <li>line 10/3</li>
   </ul>
 </div>

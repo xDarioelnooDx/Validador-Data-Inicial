@@ -1,3 +1,4 @@
+import { LoginComponent } from './../page/login/login.component';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
@@ -6,11 +7,15 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   standalone: true,
   imports: [
     CommonModule,
+    LoginComponent
   ],
 
 templateUrl: `./bar.component.html` ,
 
   styleUrl: './bar.component.css',
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class BarComponent { }
+export class BarComponent {
+  usuario: string ='';
+
+ }
+
